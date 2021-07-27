@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<style type="text/css">
+.back{
+  margin:0;
+  padding:0;
+  background: url(denis-chick-mHqIs22M2Kw-unsplash.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  font-family:sans-serif;}
+    .login-box{
+        width:820px;
+        height:820px;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        top:70%;
+        left: 50%;
+        position:absolute;
+        transform: translate(-50%,-50%);
+        box-sizing:border-box;
+        padding:70px 30px;}
+    h1{
+        margin-top: -50px;
+        margin-bottom: 0px;
+        padding: 0 0 20px;
+        text-align:center;
+        font-size:25px; 
+    }
+    .logn-box p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+    .login-box input{
+       /*width: 100%;*/
+        margin-bottom:0px;}
+    .login-box input[type="text"], input[type="tel"],input[type="date"],input[type="time"]{
+        border:none;
+        border-bottom: 1px solid #fff;
+        background:transparent;
+        outline: none;
+        height:23px;
+        color:rgb(255, 255, 255);
+        font-size:16px;
+    }
+    fieldset{
+        border-radius: 10px;
+    }
+    .login-box input[type="submit"]{
+        position: absolute;
+        top: 66%;
+        left: 25%;
+        width: 40%;
+        border:none;
+        outline:none;
+        height:30px;
+        color:rgb(5, 83, 44);
+        background:lightgrey;
+        font-size: :20px;
+        border-radius:20px;
+    }
+    .login-box input[type="submit"]:hover{
+
+        cursor:pointer;
+        background:lightgreen;
+        color: #000;     
+    }
+    }
+    .login-box:hover{
+        color:green;
+    }
+    </style>
+</head>
+<body class="back">
+<div class="login-box">
+   <form>
+       <h1>Railway Reservation Form</h1>
+       <fieldset>
+        <legend>
+        Passenger Details</br>
+        </legend>   
+            First Name:
+            <input type="text" placeholder="Ali">`
+            Last Name:
+            <input type="text" placeholder="Haider">
+             <p>
+                 Gender:
+                 Male
+                 <input type="radio" height="300">
+                 Female
+                 <input type="radio">
+
+                 Date of Birth: 
+                 <input type="Date">
+             </p>
+            <p>
+               Contact Number:
+                 <input type="tel" pattern="{0-9}" placeholder="+9233226536">
+                  Email Adress:
+                 <input type="text" name="username" pattern="[a-zA-Z]{5,15}" required placeholder="Enter The Valid Email"/>
+             </p>
+             <p class="len">
+                Permanent Adress:
+                 <input type="text" placeholder="Adress">
+                 <br>
+                Confirm Adress:
+                 <input type="text" placeholder="Confirm Adress">
+             </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>
+        Train Schedule
+        </legend>
+        <p>
+            Departure Station:
+            <input type="text" name="Departure Station" pattern="[a-zA-Z]" required placeholder="from Station"/>
+        </p>
+        <p>
+            Departure Date
+            <input type="date" placeholder="DD/MM/YY">
+
+            Departure time:
+                <input type="time" placeholder="">
+        </p>
+             <p>
+                Arrivals Station:
+                <input type="text" name="Arrival Station" pattern="[a-zA-Z]" required placeholder="To Station"/> 
+            </p>
+            <p>
+                Arrivals Date
+                <input type="date" placeholder="DD/MM/YY">
+    
+                Arrivals time:
+                    <input type="time" placeholder="">
+            </p>
+    </fieldset>
+    <br>
+    <input type="submit" name="submit" value="Ticket Book">
+   </form>
+</div>
+</body>
+</html>
